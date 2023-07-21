@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="container">
+    <div id="semaforo">
+        <div id="rojo"></div>
+        <div id="amarillo"></div>
+        <div id="verde"></div>
+    </div>
+</div>
+<button id="boton" onclick="cambiar()">Cambiar</button>
+
+<script>
+document.getElementById("rojo").style.backgroundColor ="red"
+    function cambiar(){
+        if(document.getElementById("rojo").style.backgroundColor =="red"){
+            document.getElementById("rojo").style.backgroundColor="black"
+            document.getElementById("amarillo").style.backgroundColor="yellow"
+        }else if(document.getElementById("amarillo").style.backgroundColor =="yellow"){
+            document.getElementById("amarillo").style.backgroundColor ="black"
+            document.getElementById("verde").style.backgroundColor ="green"
+        }else if(document.getElementById("verde").style.backgroundColor =="green"){
+            document.getElementById("verde").style.backgroundColor ="black"
+            document.getElementById("rojo").style.backgroundColor ="red"
+    }
+}
+</script>
+<style>
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(0, 166, 255), #FFFFFF,#E69DFB);
+}
+
+#semaforo{
+    height: 500px;
+    width: 300px;
+    background-color: #85E3FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    box-shadow: -10px 10px black ;
+}
+
+#semaforo>div{
+    background-color: black;
+    width: 120px;
+    height: 120px;
+    margin: 12px 0;
+    border-radius: 100%;
+}
+
+#boton{
+    background-color: #85E3FF;
+    height: 4%;
+    width: 8%;
+    font-size: 15px;
+}
+@media screen and (min-width: 380px) and (max-width: 900px){
+
+#boton{
+    height: 5%;
+    width: 19%;
+}
+}  
+</style>
+</body>
+</html>

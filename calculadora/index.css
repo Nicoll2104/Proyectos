@@ -1,0 +1,86 @@
+form{
+    display: flex;
+    justify-content: center;
+}
+
+input[type=button] {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+}
+
+input[type=reset] {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+}
+
+input[type="text"] {
+    border: none;
+    color: black;
+    padding: 15px 20;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 98%;
+    box-shadow: 3px 3px 5px black;
+}
+
+body{
+    background-color:#D4D7DB;
+}
+
+table {
+    border: 2px solid black;
+    margin-top: 100px;
+    background-color: #E4E7EA;
+    padding: 5px 5px;
+    width: 30%;
+    height: 400px;
+}
+
+td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+@media screen and (min-width: 380px) and (max-width: 900px){
+    input[type=button]{
+        padding: 15px 17px; 
+        font-size: 22px; 
+    }
+
+    input[type=reset]{
+        padding: 15px 17px; 
+        font-size: 22px; 
+    }
+
+    input[type="text"] {
+        padding: 15px 1px; 
+        font-size: 20px; 
+    }
+
+    table {
+        width: 90%; 
+        max-width: 600px; 
+    }
+}

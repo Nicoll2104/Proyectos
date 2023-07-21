@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <form name="Calculadora">
+      <table id="tabla">
+        <tr>
+          <td colspan="5">
+            <input type="text" name="txtboxnros" value="" disabled />
+          </td>
+        </tr>
+      </table>
+    </form>  
+    <script>
+      const texto = [1, 2, 3, "+", "-", 4, 5, 6, "*", "/", 7, 8, 9, "^", "√", 0, ".", "C", "="];
+      let contador = 0;
+      for (let i = 1; i <= 4; i++) {
+        document.getElementById("tabla").innerHTML += `<tr id="fila${i}"></tr>`;
+        for (let j = 1; j <= 5; j++) {
+          if (contador == texto.length) {
+            break;
+          } else {
+            if (texto[contador] == "√") {
+              document.getElementById(`fila${i}`).innerHTML += `<td><input type="button" value="√" onclick="raiz()"></td>`;
+            } else if (texto[contador] == "^") {
+              document.getElementById(`fila${i}`).innerHTML += `<td><input type="button" value="^" onclick="ingresaope('**')"></td>`;
+            } else if (texto[contador] == "C") {
+              document.getElementById(`fila${i}`).innerHTML += `<td><input type="button" value="C" onclick="limpiar()"></td>`;
+            } else if (texto[contador] == "=") {
+              document.getElementById(`fila${i}`).innerHTML += `<td colspan="2"><input type="button" value="=" onclick="resultado()" style="width: 95%;"></td>`;
+            } else {
+              if (j <= 3) {
+                document.getElementById(`fila${i}`).innerHTML += `<td><input type="button" value="${texto[contador]}" onclick="ingresarnum(this.value)"></td>`;
+              } else {
+                document.getElementById(`fila${i}`).innerHTML += `<td><input type="button" value="${texto[contador]}" onclick="ingresaope(this.value)"></td>`;
+              }
+            }
+            contador++;
+          }
+        }
+      }
+    function ingresarnum(num) {
+      document.getElementsByName("txtboxnros")[0].value += num;
+    }
+
+    function ingresaope(ope) {
+      document.getElementsByName("txtboxnros")[0].value += ope;
+    }
+
+    function limpiar() {
+      document.getElementsByName("txtboxnros")[0].value = "";
+    }
+
+    function resultado() {
+      const expr = document.getElementsByName("txtboxnros")[0].value;
+      const resultado = eval(expr);
+      document.getElementsByName("txtboxnros")[0].value = resultado;
+    }
+
+    function raiz() {
+      const num = parseFloat(document.getElementsByName("txtboxnros")[0].value);
+      const resultado = Math.sqrt(num);
+      document.getElementsByName("txtboxnros")[0].value = resultado;
+      }
+    </script>
+  </body>
+</html>

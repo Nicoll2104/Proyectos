@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+
+#container{
+    margin: 0;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    height: 93.2vh;
+}
+
+#p{
+    margin: 0;
+    background-image: linear-gradient(rgb(132, 231, 231), rgb(104, 104, 168));
+}
+
+img{
+    height: 50%;
+    width: 50%;
+    margin: 15%;
+    display: grid;
+}
+
+h1{
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+@media screen and (min-width: 380px) and (max-width: 900px) {
+    #container {
+        grid-template-columns: repeat(2, 50%);
+        height: 150vh;
+    }
+
+    img {
+        height: 80%;
+        width: 80%;
+        margin: 10%;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+

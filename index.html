@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="p">
+        <h1>Mis proyectos</h1>
+        <hr>
+        <div id="container"></div>
+    </div>
+
+    <script>
+        const trabajos = [
+            "./calculadora/calculadora.html",
+            "./calendario/calendario.html",
+            "./curriculum/hoja.html",
+            "./factura/index.html",
+            "./Pagina_web/pagina.html",
+            "./automatico/index.html",
+            "./boton/index2.html",
+            "./fotos/index.html"
+        ];
+
+        const imagenes = [
+            "https://ouch-cdn2.icons8.com/8G7D8YVhyAaK3fd9KO2Xwqq4NqBKIFekjeqViY1vFM8/rs:fit:456:456/extend:true/wm:1:re:0:0:0.8/wmid:ouch/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMTY1/LzkxNGViZTBiLTYz/MTEtNGZhMi1iM2Fm/LWI3NDU0MzAzNGIx/YS5zdmc.png",
+            "https://png.pngtree.com/png-clipart/20220502/original/pngtree-calendar-vector-cartoon-illustration-png-image_7651020.png",
+            "https://img.freepik.com/iconos-gratis/archivo_318-907445.jpg?w=2000",
+            "https://cdn-icons-png.flaticon.com/512/2534/2534203.png",
+            "https://1.bp.blogspot.com/-suKiyXUvLUo/UI_zlB8YHDI/AAAAAAAABN4/mhaa83o-Oeg/s1600/interrogation.png",
+            "https://i.pinimg.com/originals/79/1b/9a/791b9aa4aee357224fa53ed3861a971f.png",
+            "https://i.pinimg.com/originals/cf/57/c4/cf57c47ea36c43e951b848f1d368e443.png",
+            "https://www.pngmart.com/files/7/Gallery-PNG-Pic.png"
+        ];
+
+        trabajos.forEach((trab, i) => {
+            const link = document.createElement("a");
+            const img = document.createElement("img");
+
+            link.href = trab;
+            link.id = `link${i}`;
+
+            if (imagenes[i] !== undefined) img.src = imagenes[i];
+
+            document.getElementById(`container`).appendChild(link);
+            link.appendChild(img);
+        });
+
+    </script>
+</body>
+</html>

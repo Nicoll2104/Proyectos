@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(204, 202, 202);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.contenedor{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+    align-items: center;
+}
+
+.rojo{
+    background-color: #e66c6b;
+    padding: 80px 20px ;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: white;
+   
+}
+
+.contenedor2{
+    display: grid;
+    grid-template-columns: 14% 13% 13% 13% 13% 13% 13%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5%;
+    
+}
+
+h1{
+    font-size: 380%;
+    margin: 0;
+}
+.calen{
+    display: grid;
+    grid-template-columns: 100%;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: center;
+    margin-left: 10%;
+    border: 1px solid black;
+    width: 80%;
+    align-items: center;
+}
+
+.color{
+    color:gray;
+
+}
+
+.semana{
+    color: #e66c6b;
+}
+
+.prueba{
+    height: 5vh;
+    width: 1vh;
+    background-color:white;
+    position: absolute;
+    top: 45%;
+    border-radius: 10px;
+    box-shadow: 1px 4px 1px black;
+}
+
+.mes{
+    position: relative;
+}
+
+.i1{
+    left: 1vw;
+}
+
+.i2{
+    left: 2vw;
+}
+
+.d1{
+    right: 1vw;
+}
+
+.d2{
+    right:2vw ;
+}
+
+p:hover{
+    background-color: rgb(199, 197, 197);
+    
+}
+
+p, h4{
+    text-align: center;
+}
+
+@media (max-width: 1366px) and (min-width: 800px) {
+
+    .contenedor{
+       display: grid;
+       grid-template-columns: 50% 50%;
+    }
+
+    .i2{
+        left: 2.5vw;
+    }
+    
+    .d2{
+        right: 2.5vw;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .contenedor{
+        display: grid;
+        grid-template-columns: 100%;
+        background-color: aqua;
+    }
+
+    .i2{
+        left: 5vw;
+    }
+    
+    .d2{
+        right: 5vw;
+    }
+}
