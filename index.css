@@ -7,7 +7,6 @@ body{
     text-align: center;
     display: grid;
     grid-template-columns: repeat(4,25%);
-    height: 93.2vh;
 }
 
 #p{
