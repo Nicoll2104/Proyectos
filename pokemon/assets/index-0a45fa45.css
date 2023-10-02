@@ -1,0 +1,229 @@
+body[data-v-3d398d48] {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+#logo[data-v-3d398d48] {
+  width: 120px;
+  height: 50px;
+}
+h1[data-v-3d398d48] {
+  text-align: center;
+  margin: 20px 0;
+  color: #333;
+}
+.card-grid[data-v-3d398d48] {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 1rem;
+  padding: 20px;
+}
+.img-fluid[data-v-3d398d48] {
+  width: 570px;
+  height: 550px;
+  margin-left: 250px;
+}
+.card-img-top[data-v-3d398d48] {
+  background-color: #e5e5e5;
+}
+.card[data-v-3d398d48] {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #0000001a;
+}
+.card-text[data-v-3d398d48] {
+  font-size: 25px;
+}
+.modal-content[data-v-3d398d48] {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #0003;
+}
+.nombre-modal[data-v-3d398d48] {
+  font-size: 60px;
+  margin-top: 1%;
+}
+.id-modal[data-v-3d398d48] {
+  font-size: 95px;
+  margin-right: 90%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  color: #a569bd;
+}
+.igual-modal[data-v-3d398d48] {
+  font-size: 25px;
+}
+.lado[data-v-3d398d48] {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.lado1[data-v-3d398d48] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.bold-text[data-v-3d398d48] {
+  font-weight: 700;
+  font-size: 30px;
+}
+.modal-dialog[data-v-3d398d48] {
+  max-width: 60%;
+  width: 60%;
+}
+#tipo-modal[data-v-3d398d48] {
+  font-size: 140%;
+}
+.modal button.btn-close[data-v-3d398d48] {
+  color: #333;
+}
+.stat-container[data-v-3d398d48] {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.stat-name[data-v-3d398d48] {
+  font-size: 18px;
+  font-weight: 700;
+}
+.stat-progress[data-v-3d398d48] {
+  flex: 1;
+  margin-left: 10px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+.progress[data-v-3d398d48] {
+  height: 30px;
+}
+.progress-bar[data-v-3d398d48] {
+  font-size: 16px;
+}
+.arriba[data-v-3d398d48] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.barra[data-v-3d398d48] {
+  color: #fff;
+  height: 60px;
+}
+#logo[data-v-3d398d48] {
+  height: 90px;
+  width: 250px;
+}
+.logo[data-v-3d398d48] {
+  margin-right: 20px;
+}
+#barra1[data-v-3d398d48] {
+  flex: 1;
+  padding: 1px;
+  border: none;
+  color: #000;
+  border: 1px solid black;
+  border-radius: 400px;
+  width: 480px;
+  height: 50px;
+  margin-right: 10px;
+}
+#boton[data-v-3d398d48] {
+  background-color: #007bff;
+  border: 1px solid black;
+  padding: 10px 20px;
+  margin-left: 30px;
+  border-radius: 400px;
+  font-weight: 700;
+  margin-right: 150px;
+}
+#filtro[data-v-3d398d48] {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+#filtro img[data-v-3d398d48] {
+  width: 32px;
+  height: 32px;
+}
+.tipo[data-v-3d398d48] {
+  width: 90px;
+  border-radius: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#filtro1[data-v-3d398d48] {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #000;
+}
+.card-body[data-v-3d398d48] {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+}
+#opciones[data-v-3d398d48] {
+  display: flex;
+  flex-direction: row;
+  width: 55%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: fit-content;
+  flex-wrap: wrap;
+}
+#opcion1[data-v-3d398d48] {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+}
+#ultimo[data-v-3d398d48] {
+  height: 40px;
+  width: 90px;
+  font-weight: 700;
+  background-color: #9bfae0;
+}
+.stat-amount[data-v-3d398d48] {
+  font-size: 20px;
+  margin-left: 10px;
+}
+.quitar[data-v-3d398d48] {
+  height: 40px;
+  width: 80px;
+  margin-left: 10px;
+}
+@media screen and (min-width: 1100px) and (max-width: 1650px) {
+  .img-fluid[data-v-3d398d48] {
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 1000px) {
+  .modal-dialog[data-v-3d398d48] {
+    max-width: 100%;
+    width: 100%;
+    margin-left: 1px;
+  }
+  .arriba[data-v-3d398d48] {
+    flex-direction: column;
+  }
+  #barra1[data-v-3d398d48] {
+    width: 340px;
+    margin-bottom: 10px;
+  }
+  #filtro[data-v-3d398d48] {
+    margin-top: 50px;
+  }
+  .lado[data-v-3d398d48] {
+    flex-direction: column-reverse;
+  }
+  .img-fluid[data-v-3d398d48] {
+    width: 270px;
+    height: 250px;
+    margin-left: 10px;
+  }
+}
