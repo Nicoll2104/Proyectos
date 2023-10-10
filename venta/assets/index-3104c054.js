@@ -3276,19 +3276,19 @@ const qi = (...e) => {
 function ki(e) {
   return k(e) ? document.querySelector(e) : e;
 }
-const Yi = "./tienda_mangas/assets/carrito-34e00f0d.png",
-  Xi = "./tienda_mangas/assets/given-e5447858.png",
-  Zi = "./tienda_mangas/assets/one_piece-f12c142f.webp",
-  Qi = "./tienda_mangas/assets/seven-3afbace6.webp",
-  Vi = "./tienda_mangas/assets/banana-288bd019.jpg",
-  Gi = "./tienda_mangas/assets/hero-4efcdd7a.webp",
-  el = "./tienda_mangas/assets/koro-bd35c621.webp",
-  tl = "./tienda_mangas/assets/kaisen-cde17fca.webp",
-  nl = "./tienda_mangas/assets/horimiya-e4a56f07.png",
-  sl = "./tienda_mangas/assets/yuri-e8736898.jpg",
-  rl = "./tienda_mangas/assets/ghoul-6c206b1f.webp",
-  ol = "./tienda_mangas/assets/koe-eb581835.jpg",
-  il = "./tienda_mangas/assets/bungou-b5d12602.webp";
+const Yi = "/tienda_mangas./assets/carrito-34e00f0d.png",
+  Xi = "/tienda_mangas./assets/given-e5447858.png",
+  Zi = "/tienda_mangas./assets/one_piece-f12c142f.webp",
+  Qi = "/tienda_mangas./assets/seven-3afbace6.webp",
+  Vi = "/tienda_mangas./assets/banana-288bd019.jpg",
+  Gi = "/tienda_mangas./assets/hero-4efcdd7a.webp",
+  el = "/tienda_mangas./assets/koro-bd35c621.webp",
+  tl = "/tienda_mangas./assets/kaisen-cde17fca.webp",
+  nl = "/tienda_mangas./assets/horimiya-e4a56f07.png",
+  sl = "/tienda_mangas./assets/yuri-e8736898.jpg",
+  rl = "/tienda_mangas./assets/ghoul-6c206b1f.webp",
+  ol = "/tienda_mangas./assets/koe-eb581835.jpg",
+  il = "/tienda_mangas./assets/bungou-b5d12602.webp";
 const ll = (e, t) => {
     const n = e.__vccOpts || e;
     for (const [s, r] of t) n[s] = r;
